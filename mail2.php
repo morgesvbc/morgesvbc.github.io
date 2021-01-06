@@ -108,7 +108,7 @@
             </div>
 		</div>
 		<div id="footer">
-			<p>Copyright © 2017 - Volleyball Club Morges</p>
+			<p>Copyright © 2021 - Volleyball Club Morges</p>
             <a id="morges" href="http://www.morges.ch/fr/" target=_blank>
             <a id="volley" href="http://www.volleyball.ch/" target=_blank>
 		</div>            
