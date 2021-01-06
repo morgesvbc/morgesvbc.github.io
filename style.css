@@ -1,0 +1,597 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/***********************************
+************* GLOBAL ***************
+**********************************/
+	
+	/* GLOBAL */
+		*{
+		margin: 0px;
+		padding: 0px;
+		}
+		
+	/* AJOUTE L'ASCENSEUR */
+		html, body{
+		height: 100.1%
+		}
+		
+	/* FOND GLOBAL */
+		body{
+		background-image: url(images/background.jpg);
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-color: #ebebeb;
+		margin: auto;
+		}
+		
+	/* FOND BLANC DU SITE */
+		#blanc{
+		overflow: hidden;
+		width: 847px;
+		margin: auto;
+		padding-left: 35px;
+		padding-right: 35px;
+		padding-bottom: 10px;
+		padding-top: 20px;
+		border-radius: 0px 0px 0px 0px;
+		background-color:#FFF;
+		min-height: 500px;
+		}
+		
+	/* LIENS */
+		a{
+		color: #cc3300;
+		text-decoration: underline;
+		}
+		
+	/* SURVOL D'UN LIENS*/	
+		a:hover{
+		text-decoration: none;
+		color: #cc3300;
+		}
+
+
+/*********************************
+************** FONT **************
+**********************************/
+		
+	/* TEXTE COURANT */
+		p{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		line-height: 19px;
+		color: #555;
+		margin-bottom: 5px;
+		margin-left: 5px;
+		}
+		
+	/* TEXTE DECALé */
+		.text{
+		border-left: #AAA solid 3px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		padding-left: 5px;
+		}
+		
+	/* LISTE */
+		#contenu ul{
+		border-left: #AAA solid 3px;
+		}
+		
+	/* LISTE -> TEXTE */
+		#contenu ul li{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		line-height: 21px;
+		color: #555; 
+		padding-left: 5px;
+		list-style: none;
+		}
+		
+	/* GRANDS TITRES */
+		h2{
+		font-family: 'Dosis', sans-serif;
+		font-weight: 300;
+		font-size: 40px;
+		margin-bottom: 3px;
+		}
+		
+	/* COURANTS TITRES*/
+		h4{
+		font-family: 'Dosis', sans-serif;
+		font-weight: 500;
+		font-size: 22px;
+		color: #cc3300;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		}
+		
+	/* COURANTS TITRES H2 MODIFS*/
+		#titre{
+		font-family: 'Dosis', sans-serif;
+		font-weight:400;
+		font-size: 50px;
+		letter-spacing: -1px;
+		word-spacing: 10px;
+		text-transform:uppercase;
+		margin-bottom: 20px;
+		width: 900px;
+		color: #444;
+		padding-bottom: 5px;
+		}
+		
+
+/**********************************
+********** FORMULAIRES ************
+**********************************/
+
+	/* TEXTE FORMULAIRE */
+		label{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		line-height: 21px;
+		color: #666;
+		}
+		
+	/* CASE POSITION TERRAIN */
+		select{
+		color: #666;
+		width: 225px;
+		height: 25px;
+		margin-right: 50px;
+		margin-bottom: 15px;
+		}
+		
+
+		
+	/* TAILLE DES CELLULES DE TYPE "TEXT" */
+		input[type="text"]{
+		width: 220px;
+		height: 20px;
+		margin-right: 50px;
+		margin-bottom: 15px;
+		}
+		
+	/* TAILLE DES CELLULES DE TYPE "PASSWORD" */
+		input[type="password"]{
+		width: 220px;
+		height: 20px;
+		margin-right: 50px;
+		margin-bottom: 15px;
+		}
+		
+	/* TAILLE DE LA CELLULE COMMENTAIRE */
+		textarea{
+		width: 495px;
+		min-height: 100px;
+		max-width: 495px;
+		}
+		
+	/* MISE EN FORME DES BOUTONS */
+		input[type="radio"]{
+		margin-left: 6px;
+		}
+		
+	/* TABLEAUX (LES FORMULAIRES SONT INCLUS DANS DES TABLEAUX*/
+		table{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		line-height: 21px;
+		color: #666;
+		}
+
+
+/**********************************
+************* HEADER **************
+**********************************/
+		
+	/* HAUTEUR ET COULEUR DU HEADER */
+		#header{
+		height: 80px;
+		margin-top: 20px;
+		}
+		
+	/* DEGAGE LE TEXTE DU LOGO */
+		#header #logo{
+		text-indent: -5000px;
+		}
+		
+	/* LOGO DU HEADER */
+		#header #logo a{
+		float: left;
+		height: 72px;
+		width: 400px;
+		background-image: url(images/logo.png);
+		background-repeat: no-repeat;
+		}
+		
+	/* DEGAGE LE TEXTE DU LOGO FACEBOOK */
+		#header #facebook{
+		text-indent: -5000px;
+		}
+		
+	/* LOGOFACEBOOK DU HEADER */
+		#header #facebook a{
+		float: right;
+		width: 104px;
+		height: 39px;
+		background-image: url(images/facebook_suivez.png);
+		background-repeat: no-repeat;
+		}
+				
+
+/**********************************
+************* MENU **************
+**********************************/
+		
+	/* MENU */
+		#nav{
+		font-family: 'Dosis', sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		text-transform: uppercase;
+		margin-top: 40px;;
+		}
+		
+	/* MENU -> CASES */
+		#nav li {
+		display: inline;		
+		list-style: none;
+		border-radius: 20px;
+		}
+		
+	/* MENU -> LIENS CASES */
+		#nav a{
+		float:left;
+		color: #444;
+		display: block;
+		text-align: center;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		text-decoration: none;
+		background-image:url(images/background_grey1.png);
+		background-repeat:repeat-x;
+		border-bottom: #cc3300 solid 2px;
+		}
+		
+	/* MENU -> LIENS SURVOL */
+		#nav a:hover{
+		color: #FFF;
+		background-image:url(images/background_red1.png);
+		background-repeat:repeat-x;
+		}
+		
+	/* MENU -> CASE PAGE ACTIVE */
+		#nav .On a{
+		background-image:url(images/background_red1.png);
+		background-repeat:repeat-x;
+		color: #FFF;
+		}
+		
+	/* MENU -> DIMENSIONS CASES */
+		#nav .accueil	{width: 86px;}
+		#nav .club		{width: 138px;}
+		#nav .equipes	{width: 123px;}
+		#nav .membre	{width: 159px;}
+		#nav .tournoi	{width: 158px;}
+		#nav .photos	{width: 82px;}
+		#nav .contacts	{width: 101px;}
+
+
+/**********************************
+*********** SOUS-MENU *************
+**********************************/
+		
+	/* SOUS-MENU */
+		#nav .sousMenu{
+		position: absolute;
+		font-family: 'Dosis', sans-serif;
+		font-size: 19px;
+		font-weight: 400;
+		width: 847px;
+		margin-top: 244px;
+		text-transform: uppercase;
+		background-image:url(images/background_grey2.png);
+		background-repeat:repeat-x;
+		border-top: #cc3300 solid 2px;
+		}
+		
+	/* SOUS-MENU -> CASES */
+		#nav .sousMenu li a{
+		background-color: inherit;
+		background-image: inherit;
+		color: #555;
+		}
+		
+	/* SOUS-MENU -> LIENS CASES */
+		#nav .sousMenu a{
+		padding: 7px 12px 7px 12px;
+		border-bottom: none;
+		margin-top: 0px;
+		color: #2f2f2f;
+		}
+		
+	/* SOUS-MENU -> LIENS SURVOLS */
+		#nav .sousMenu a:hover{
+		background-image:url(images/background_red2.png);
+		background-repeat:repeat-x;
+		border-radius: 0px 0px 1px 1px;
+		color: #FFF;
+		}
+
+	/* SOUS-MENU -> CASE PAGE ACTIVE */
+		#nav .sousMenu .On a{
+		background-image:url(images/background_red2.png);
+		background-repeat:repeat-x;
+		border-radius: 0px 0px 1px 1px;
+		color: #FFF;
+		}
+		
+		
+/**********************************
+************* CONTENU *************
+**********************************/
+		
+	/* CONTENU */
+		#contenu{
+		margin-top:80px;
+		}
+		
+	/* ENLEVE LES BORDURES AUX IMAGES*/
+		#contenu img{
+		border: 0px;
+		}
+		
+	/* BLOC DE CONTENU AU FOND GRIS */
+		.bloc{
+		padding: 20px;
+		background-color:#f5f5f5;
+		margin-bottom: 20px;
+		}
+		
+	/* BLOC DE CONTENU AU FOND GRIS */
+		.bloc_photos{
+		padding: 20px;
+		background-color:#f5f5f5;
+		margin-bottom: 20px;
+		}
+		
+		.bloc_photos a{
+		text-decoration:none;
+		}
+
+		.bloc_photos a:hover{
+		text-decoration:underline;
+		}
+				
+		.bloc img{
+		vertical-align: middle;
+		margin-right: 10px;
+		margin-bottom: 5px;
+		}
+
+		
+	/* IMAGES DANS LES COLONNES */
+		.imagecolonne img{
+		float: left;
+		border-radius: 5px;
+		margin-right: 8px;
+		}
+		
+	/* PARTENAIRES */
+		.partenaires{
+		height: 110px;
+		text-align: center;
+		}
+		
+	/* PARTENAIRES LIENS */
+		.partenaires a{
+		line-height: 110px;
+		margin: auto;
+		}
+		
+	/* PARTENAIRES IMAGES */
+		.partenaires img{
+		vertical-align: bottom;
+		margin-bottom: 10px;
+		}
+		
+		
+/**********************************
+************* COLONNES *************
+**********************************/
+		
+	/*TRES PETITE GAUCHE (4COLONNES)*/
+		#colonne_tres_petite_gauche{
+		float: left;
+		width: 197px;
+		margin-right: 20px;
+
+		}
+		
+	/*TRES PETITE DROITE (4COLONNES) */ 
+		#colonne_tres_petite_droite{
+		float: right;
+		width: 196px;
+
+		}
+		
+	/*TRES PETITE MILIEU 1(4COLONNES) */ 
+		#colonne_tres_petite_milieu1{
+		float: left;
+		width: 197px;
+		margin-right: 20px;
+
+		}
+		
+	/*TRES PETITE MILIEU 2(4COLONNES) */ 
+		#colonne_tres_petite_milieu2{
+		float: right;
+		width: 196px;
+
+		}
+	
+	/*PETITE GAUCHE (3COLONNES)*/
+		#colonne_petite_gauche{
+		float: left;
+		width: 269px;
+		margin-right: 20px;
+
+		}
+		
+	/*PETITE DROITE*/
+		#colonne_petite_droite{
+		float: right;
+		width: 269px;
+
+		}
+		
+	/*MOYENNE GAUCHE (2COLONNES)*/
+		#colonne_moyenne_gauche{
+		float: left;
+		width: 413px;
+		margin-right: 20px;
+
+		}
+		
+	/*MOYENNE DROITE (2COLONNES)*/
+		#colonne_moyenne_droite{
+		float: left;
+		width: 413px;
+
+		}
+				
+	/*GRANDE GAUCHE (2COLONNES)*/
+		#colonne_grande_gauche{
+		float: left;
+		width: 558px;
+		margin-right: 20px;
+
+		}
+		
+	/*GRANDE DROITE (2COLONNES)*/
+		#colonne_grande_droite{
+		float: left;
+		width: 558px;
+
+		}
+		
+	/*COLONNE ENTIERE*/
+		#colonne_entiere{
+		width: 847px;
+
+		}
+		
+
+/**********************************
+************** FOOTER *************
+**********************************/
+				
+		#footer{
+		margin: 20px auto;
+		margin-top: 8px;
+		width: 917px;
+		margin-bottom: 40px;
+		}
+
+		#footer #volley{
+		margin-top: -30px;
+		height: 36px;
+		width: 212px;
+		background-image:url(images/f_swissvolley.png);
+		background-repeat:no-repeat;
+		float: right;
+		margin-left: 20px;
+		}
+		
+		#footer #volley:hover{
+		background-image:url(images/f_swissvolley_hover.png);
+		background-repeat:no-repeat;
+		}
+		
+		#footer #morges{
+		margin-top: -30px;
+		height: 37px;
+		width: 110px;
+		background-image:url(images/f_morges.png);
+		background-repeat:no-repeat;
+		float: right;
+		}
+		
+		#footer #morges:hover{
+		background-image:url(images/f_morges_hover.png);
+		background-repeat:no-repeat;
+		}
+		
+		#footer p{
+		font-size: 11px;
+		}
+		
+		
+/**********************************
+******* PHOTOS: ACCORDION *********
+**********************************/
+
+		#accordion p {
+		margin-top: 0px;
+		padding: 0px;
+		}
+		
+
+/**********************************
+***** REINITIALISE LE FLOAT *******
+**********************************/
+		
+		.clear{
+		clear: both;
+		}
+		
+		
+		
+/**********************************
+************* SLIDER **************
+**********************************/
+		
+		.slides_container {
+		width:847px;
+		overflow:hidden;
+		position:relative;
+		display:none;
+		}
+	
+		.slides_container a {
+		width:847px;
+		height:200px;
+		}
+
+		.slides_container a img {
+		display:block;
+		}
+
+		#slides .next {
+		left:847px;
+		}
+
+		.pagination {
+		margin:auto;
+		width:100px;
+		}
+		
+		.pagination li {
+		float:left;
+		margin:0 1px;
+		list-style:none;
+		}
+		
+		.pagination li a {
+		display:block;
+		width:0px;
+		height:0;
+		padding-top:12px;
+		background-image:url(../img/pagination.png);
+		background-position:0 0;
+		float:left;
+		overflow:hidden;
+		}

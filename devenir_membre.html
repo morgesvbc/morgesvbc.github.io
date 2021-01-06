@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Volleyball Club Morges</title>
+		<link href='http://fonts.googleapis.com/css?family=Dosis:800,700,600,500,400,300,200' rel='stylesheet' type='text/css'>
+		<link href="style.css" rel="stylesheet" type="text/css" media="screen">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="slides.min.jquery.js"></script>
+        <script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 8000,
+				pause: 8000,
+				slideSpeed: 800,
+				preload: true,
+				randomize: true,
+				hoverPause: false
+			});
+		});
+
+			function ControleVide()
+			{
+				
+			if(document.formulaire.prenom.value=='')
+			{
+			alert('Veuillez indiquer votre prénom');
+			document.formulaire.prenom.focus();
+			}
+			
+			else if(document.formulaire.nom.value=='')
+			{
+			alert('Veuillez indiquer votre nom');
+			document.formulaire.nom.focus();
+			}
+			
+			else if(document.formulaire.date.value=='')
+			{
+			alert('Veuillez indiquer votre date de naissance');
+			document.formulaire.date.focus();
+			}
+			
+			else if(document.formulaire.postal.value=='')
+			{
+			alert('Veuillez indiquer votre code postal');
+			document.formulaire.postal.focus();
+			}
+			
+			else if(document.formulaire.adresse.value=='')
+			{
+			alert('Veuillez indiquer votre adresse');
+			document.formulaire.adresse.focus();
+			}
+			
+			else if(document.formulaire.ville.value=='')
+			{
+			alert('Veuillez indiquer votre ville');
+			document.formulaire.ville.focus();
+			}
+			
+			else if(document.formulaire.tel.value=='')
+			{
+			alert('Veuillez indiquer un numéro de téléphone');
+			document.formulaire.tel.focus();
+			}
+			
+			else if(document.formulaire.mail.value=='')
+			{
+			alert('Veuillez indiquer une adresse email');
+			document.formulaire.mail.focus();
+			}
+			
+			else if(document.formulaire.case1.value=='on')
+			{
+			alert('Etes-vous majeur et savez-vous jouer au volley?');
+			document.formulaire.case1.focus();
+			}
+			
+			else if(document.formulaire.position.value=='')
+			{
+			alert('Veuillez indiquer votre style de jeu');
+			document.formulaire.position.focus();
+			}
+			
+			else
+			{
+			document.formulaire.method = "POST";
+			document.formulaire.action = "mail.php";
+			document.formulaire.submit();
+			}
+			}
+        </script>
+		<script type="text/javascript">
+        
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-37620190-1']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        
+        </script>
+	</head>
+    
+	<body>
+		<div id="blanc">
+			<div id="header">
+				<h1 id="logo"><a href="index.html">Logo Morges VBC</a></h1>
+			</div>
+                 
+			<ul id="nav">
+                <li><a class="accueil" href="index.html">Accueil</a></li>            
+                <li><a class="club" href="club.html">Présentation</a></li>             
+                <li><a class="equipes" href="morgestourix.html">Nos equipes</a></li>              
+                <li class="On"><a class="membre" href="devenir_membre.html">Devenir membre</a></li>            
+                <li><a class="tournoi" href="tournoi_noel.html">Tournoi de Noël</a></li>            
+                <li><a class="photos" href="photos.html">Photos</a></li>            
+                <li><a class="contacts" href="contacts.html">Contacts</a></li>
+            </ul>
+        
+            <div class="clear"></div>
+            <div id="slides">
+                <div class="slides_container" style="border-bottom: #cc3300 solid 2px;">
+                    <img src="slider/slide_18.jpg" width="847" height="200" alt="Slide">
+                    <img src="slider/slide_22.jpg" width="847" height="200" alt="Slide">
+                    <img src="slider/slide_26.jpg" width="847" height="200" alt="Slide">
+                 </div>                    
+			</div>
+            
+            <div id="contenu">
+                <h2 id="titre">/// Devenir membre ///</h2>
+                
+				<div id="colonne_grande_gauche">
+					<div class="bloc">
+                        <h4>Formulaire d'adhésion</h4>
+                        <p class="text"><b>Dans les équipes détentes, nous ne formons pas les joueurs.</b><br/>
+                        Nous acceptons uniquement les personnes sachant déjà jouer au volley-ball.</p>    
+                                       
+                        <form method="post" action="mail.php" name="formulaire">
+                            <br/>
+                            <table>
+                                <tr>
+                                    <td>
+                            <br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Prenom*</label><br/>
+                                        <input type="text" name="prenom"/>
+                                    </td>
+                                    <td>
+                                        <label>Nom*</label><br/>
+                                        <input type="text" name="nom"/>
+                                    </td>
+                               </tr>
+                                <tr>
+                                    <td>
+                                        <label>Date de naissance*</label><br/>
+                                        <input type="text" name="date" />
+                                    </td>
+                                    <td>
+                                        <label>Adresse*</label><br/>
+                                        <input type="text" name="adresse" />
+                                    </td>
+                               </tr>
+                                <tr>
+                                    <td>
+                                        <label>Code postal*</label><br/>
+                                        <input type="text" name="postal" />
+                                    </td>
+                                    <td>
+                                        <label>Ville*</label><br/>
+                                        <input type="text" name="ville" />
+                                    </td>
+                               </tr>
+                                <tr>
+                                    <td>
+                                        <label>Téléphone*</label><br/>
+                                        <input type="text" name="tel" />
+                                    </td>
+                                    <td>
+                                        <label>Email*</label><br/>
+                                        <input type="text" name="mail" />
+                                    </td>
+                                </tr>
+                            </table>
+                                       
+                            <label>Position preférée sur le terrain*</label><br />
+                            <select name="position">
+                                <option value="" selected="selected">Veuillez choisir</option>
+                                <option value="Passe">Passe</option>
+                                <option value="Centre">Centre</option>
+                                <option value="Aile">Aile</option>
+                                <option value="Libero">Libero</option>
+                            </select>
+                                  
+                            <br/>
+                            <br/>
+                            <input type="checkbox" name="case1" value="Je sais jouer au volley et suis majeur"/>
+                            <label> Je confirme être majeur et savoir jouer au volley*</label>
+                            <br/>
+                            <p style="font-size:12px"><a href="juniors.html">Vous avez moins de 18 ans?</a></p>
+                            <br/>
+									<label>Commentaire</label>
+									<textarea name="comments" cols="40"></textarea>
+                                    <br/>
+                                    <br/>
+                            	<input type="button" value="Envoyer" onClick="ControleVide()">
+                        </form>
+					</div>
+                </div> 
+       
+                <div id="colonne_petite_droite">
+                	<div class="bloc">
+                        <h4>Cotisation</h4>
+                        <p><strong>Adultes: 100.- CHF par année.</strong></p>
+						<p class="text"> Les membres du Comité sont dispensés du paiement de la cotisation.</p> 
+					</div>
+                    <div class="bloc">
+                        <h4>Entrainements</h4>
+                        <p class="text">Tous les mercredis de 20h à 22h à la Salle Omnisport de Beausobre</p>
+                    </div>
+                    <div class="bloc">
+                        <h4>Statuts et chartes</h4>
+                        <p><a href="doc/Statuts_VBC_Morges_2013.pdf"><img src="images/pdf.png" alt="Icone PDF">Statuts du VBC Morges</a></p>
+                        <p><a href="doc/Charte_VBC_Morges_2013.pdf"><img src="images/pdf.png" alt="Icone PDF">Charte du VBC Morges</a></p>
+                    </div>        
+				</div>
+            </div>
+		</div>
+		<div id="footer">
+			<p>Copyright © 2017 - Volleyball Club Morges</p>
+            <a id="morges" href="https://www.morges.ch/" target=_blank>
+            <a id="volley" href="http://www.volleyball.ch/" target=_blank>
+		</div>            
+    </body>
+</html>

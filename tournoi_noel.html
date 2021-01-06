@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Volleyball Club Morges</title>
+		<link href='http://fonts.googleapis.com/css?family=Dosis:800,700,600,500,400,300,200' rel='stylesheet' type='text/css'>
+		<link href="style.css" rel="stylesheet" type="text/css" media="screen">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="slides.min.jquery.js"></script>
+        <script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 8000,
+				pause: 8000,
+				slideSpeed: 800,
+				preload: true,
+				randomize: true,
+				hoverPause: false
+			});
+		});
+
+			function ControleVide()
+			{
+			if(document.formulaire.club.value=='')
+			{
+			alert('Veuillez indiquer votre nom de club');
+			document.formulaire.club.focus();
+			}
+			
+			else if(document.formulaire.equipe.value=='')
+			{
+			alert('Veuillez indiquer votre nom d\'equipe');
+			document.formulaire.equipe.focus();
+			}
+			
+			else if(document.formulaire.responsable.value=='')
+			{
+			alert('Veuillez indiquer le nom et prénom du responsable');
+			document.formulaire.responsable.focus();
+			}
+
+			else if(document.formulaire.mailresponsable.value=='')
+			{
+			alert('Veuillez indiquer une adresse email');
+			document.formulaire.mailresponsable.focus();
+			}
+			
+			else if(document.formulaire.telresponsable.value=='')
+			{
+			alert('Veuillez indiquer un numéro de téléphone');
+			document.formulaire.telresponsable.focus();
+			}
+			
+			else
+			{
+			document.formulaire.method = "POST";
+			document.formulaire.action = "mail2.php";
+			document.formulaire.submit();
+			}
+			}
+        </script>
+		<script type="text/javascript">
+        
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-37620190-1']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        
+        </script>
+	</head>
+
+    <body>
+		<div id="blanc">
+			<div id="header">
+				<h1 id="logo"><a href="#">Logo Morges VBC</a></h1>
+			</div>
+                 
+            <ul id="nav">
+                <li><a class="accueil" href="index.html">Accueil</a></li>            
+                <li><a class="club" href="club.html">Présentation</a></li>             
+                <li><a class="equipes" href="morgestourix.html">Nos equipes</a></li>              
+                <li><a class="membre" href="devenir_membre.html">Devenir membre</a></li>            
+                <li class="On"><a class="tournoi" href="tournoi_noel.html">Tournoi de Noël</a></li>       
+                <li><a class="photos" href="photos.html">Photos</a></li>            
+                <li><a class="contacts" href="contacts.html">Contacts</a></li>
+            </ul>
+        
+            <div class="clear"></div>
+            <div id="slides">
+                <div class="slides_container" style="border-bottom: #cc3300 solid 2px;">
+                    <img src="slider/slide_20.jpg" width="847" height="200" alt="Slide">
+                    <img src="slider/slide_30.jpg" width="847" height="200" alt="Slide">
+                    <img src="slider/slide_30.jpg" width="847" height="200" alt="Slide">
+                    <img src="slider/slide_34.jpg" width="847" height="200" alt="Slide">
+                    <img src="slider/slide_35.jpg" width="847" height="200" alt="Slide">
+                    <img src="slider/slide_36.jpg" width="847" height="200" alt="Slide">
+                    <img src="slider/slide_37.jpg" width="847" height="200" alt="Slide">
+                 </div>                    
+			</div>
+            
+            <div id="contenu">
+                <h2 id="titre">/// Tournoi de Noël ///</h2>
+                
+                <div id="colonne_grande_gauche">
+					<div class="bloc">
+                        <h4>Inscriptions</h4>
+                        <p class="text">Le tournoi du VBC Morges est une véritable tradition pour le club. En effet, depuis 24 ans déjà, nous accueillons de nombreuses équipes sur les terrains de Beausobre. Cette année, le tournoi se déroulera le dimanche 2 décembre 2018.</p>
+                        <p class="text">C’est donc avec plaisir que nous vous proposons d’y participer. Le petit déjeuner ainsi que le repas de midi seront servi sur place. En plus des repas, une cantine proposera des boissons, sandwichs, pâtisseries, etc tout au long de la journée.</p>
+                        <p class="text">Et pour couronner le tout, une panoplie de prix récompensera vos efforts de la journée. Nous nous réjouissons déjà de vous accueillir avec vos fans club!</p></br>
+                    
+						<form method="post" action="mail2.php" name="formulaire">
+                    	<table>
+                            <tr>
+                                <td>
+                                  <label>Nom du club*</label>
+                                    <input type="text" name="club" /><br />
+                                </td>
+                                <td>
+                                  <label>Nom de l'equipe*</label>
+                                    <input type="text" name="equipe" /><br />
+                               </td>
+							</tr>
+							<tr>
+                                <td>
+                                  <label>Nom et prénom du responsable*</label>
+                                    <input type="text" name="responsable" /><br />
+                                </td>
+                                <td>
+                                  <label>Adresse mail du responsable*</label>
+                                    <input type="text" name="mailresponsable" /><br />
+                                </td>
+                           </tr>
+                            <tr>
+                                <td>
+                                  <label>Telephone du responsable*</label>
+                                    <input type="text" name="telresponsable" /><br />
+                                </td>
+                           </tr>
+                        </table>  
+                            
+                                <p class="titre">Commentaires</p>
+<textarea name="comments" cols="40"></textarea>
+                            <br/>
+                            <br/>
+                            <input type="button" value="Envoyer" onClick="ControleVide()">
+                        </form>
+</form>
+					</div>
+				</div> 
+
+				<div id="colonne_petite_droite">
+                    <div class="bloc">
+                        <h4>Informations</h4>
+                        <p class="text"> Les inscriptions sont ouvertes! <br/>
+                        
+                        <b>Lieu:</b> Beausobre, Morges<br/>
+                        <b>Date:</b> 02.12.2018 (8h30 à 16h00)<br/>
+                        <b>Prix</b>: 60.- à payer sur place</p>
+    
+                        
+                        
+                        <p><a href="doc/Reglement.pdf"><img src="images/coupe.png" alt="Icone PDF">Reglement</a></p>
+                        <!--<p><a href="doc/Planning.pdf"><img src="images/coupe.png" alt="Icone PDF">Planning</a></p>-->
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div id="footer">
+            <p>Copyright © 2017 - Volleyball Club Morges </p>
+            <a id="morges" href="https://www.morges.ch/" target=_blank>
+            <a id="volley" href="http://www.volleyball.ch/" target=_blank>
+		</div>            
+	</body>
+</html>
